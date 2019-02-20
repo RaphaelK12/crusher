@@ -1,0 +1,72 @@
+# Microsoft Developer Studio Generated Dependency File, included by crusher.mak
+
+.\src\3dmath.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\defs.h"\
+	".\src\stdafx.h"\
+	
+
+.\src\crusher.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\crusher.h"\
+	".\src\defs.h"\
+	".\src\md2.h"\
+	".\src\pcx.h"\
+	".\src\render.h"\
+	".\src\stdafx.h"\
+	
+
+.\src\errors.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\crusher.h"\
+	".\src\defs.h"\
+	".\src\md2.h"\
+	".\src\pcx.h"\
+	".\src\stdafx.h"\
+	
+
+.\src\md2.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\defs.h"\
+	".\src\md2.h"\
+	".\src\pcx.h"\
+	".\src\render.h"\
+	".\src\stdafx.h"\
+	
+
+.\src\pcx.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\defs.h"\
+	".\src\pcx.h"\
+	".\src\stdafx.h"\
+	
+
+.\src\render.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\crusher.h"\
+	".\src\defs.h"\
+	".\src\md2.h"\
+	".\src\pcx.h"\
+	".\src\render.h"\
+	".\src\stdafx.h"\
+	".\src\tri.h"\
+	
+
+.\src\tri.cpp : \
+	"..\..\..\..\microsoft visual studio\vc98\include\basetsd.h"\
+	".\src\3dmath.h"\
+	".\src\defs.h"\
+	".\src\fixed.h"\
+	".\src\pcx.h"\
+	".\src\tri.h"\
+	
+
+.\resources\Crusher.rc : \
+	".\resources\gazpacho.ico"\
+	".\resources\logo.bmp"\
+	
