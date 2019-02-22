@@ -56,7 +56,7 @@ LoadRegValue (LPCTSTR tValue, LPTSTR tData)
     HKEY	hkCrusher;
     LONG	lResult;
 
-    lResult = RegOpenKeyExA(HKEY_LOCAL_MACHINE,
+    lResult = RegOpenKeyExA(HKEY_CURRENT_USER,
                             tREG_KEY_CRUSHER,
                             0,
                             KEY_QUERY_VALUE,
@@ -100,7 +100,7 @@ SaveRegValue (LPCTSTR tValue, LPCTSTR tData)
     HKEY	hkClass;
     HKEY	hkCrusher;
 
-    RegCreateKeyEx (HKEY_LOCAL_MACHINE,
+    RegCreateKeyEx (HKEY_CURRENT_USER,
                     tREG_KEY_CLASS,
                     0,
                     "",
