@@ -66,7 +66,6 @@ static BOOL				ParseCmdLine		(LPSTR);
 static BOOL CALLBACK	AboutDialogProc		(HWND, UINT, WPARAM, LPARAM);
 static int				DoAboutBox			(HWND);
 static int				DoUnrExportBox		(HWND);
-static void				ILFree				(LPITEMIDLIST);
 static void				LaunchBrowser		(LPCTSTR);
 static BOOL CALLBACK	SettingsDialogProc	(HWND, UINT, WPARAM, LPARAM);
 static BOOL CALLBACK	UnrExportDialogProc	(HWND, UINT, WPARAM, LPARAM);
@@ -1196,25 +1195,6 @@ DoAboutBox (HWND hWnd)
                       hWnd,
                       (DLGPROC) AboutDialogProc);
 } // DoAboutBox
-
-// ========================================================================
-// Name.......: ILFree()
-// Description: This function frees the memory allocated to an item list.
-// Parameters.: pidl				- an item list
-// Returns....: NIL
-// ========================================================================
-static void
-ILFree(LPITEMIDLIST pidl)
-{
-    LPMALLOC pMalloc;
-
-    if (pidl)
-    {
-        SHGetMalloc(&pMalloc);
-        pMalloc->Free(pidl);
-        pMalloc->Release();
-    }
-} // ILFree
 
 // ========================================================================
 // Name.......: LaunchBrowser()
